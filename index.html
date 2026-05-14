@@ -1,19 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Manager</title>
+  <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
+<nav class="navbar">
+  <span class="nav-brand">IT204</span>
+  <ul class="nav-links">
+    <li><a href="./index.html">Task Manager</a></li>
+    <li><a href="./model_popup.html">Modal Popup</a></li>
+    <li><a href="./table_generator.html">Table Generator</a></li>
+  </ul>
+</nav>
+  <div class="container">
+    <h1>My Tasks</h1>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="model_popup.html">Model Popup</a></li>
-            <li><a href="table_generator.html">Table Generator</a></li>
-        </ul>
-    </nav>
-    
+    <div class="input-row">
+      <input type="text" id="taskInput" placeholder="Add a new task...">
+      <button id="addBtn">Add</button>
+    </div>
+
+    <ul id="taskList"></ul>
+  </div>
+
+  <script src="./js/index.js"></script>
 </body>
 </html>
