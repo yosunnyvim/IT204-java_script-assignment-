@@ -1,11 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <title>Table Generator</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    
+
+  <h1>Table Generator</h1>
+
+  <div class="form">
+    <input type="text" id="inputName" placeholder="Name" />
+    <input type="text" id="inputRole" placeholder="Role" />
+    <input type="text" id="inputStatus" placeholder="Status" />
+    <button id="addBtn">Add Row</button>
+  </div>
+
+  <p id="errorMsg" class="error"></p>
+
+  <table id="myTable">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Role</th>
+        <th>Status</th>
+        <th>Remove</th>
+      </tr>
+    </thead>
+    <tbody id="tableBody">
+    </tbody>
+  </table>
+
+  <script src="script.js"></script>
 </body>
 </html>
